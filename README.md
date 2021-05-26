@@ -16,7 +16,7 @@ The apps need server files to run which have not been included in this repo.
 ![image](https://user-images.githubusercontent.com/45819206/119627060-8fc73380-be2b-11eb-84cf-cf17b1c3131a.png)     ![image](https://user-images.githubusercontent.com/45819206/119627087-9655ab00-be2b-11eb-83dc-5f7b8a13f8b2.png)
 
 
-### Setup
+### Setup Screens
 
 ![image](https://user-images.githubusercontent.com/45819206/119627605-10862f80-be2c-11eb-91cd-2c2bd8ffaeba.png)     ![image](https://user-images.githubusercontent.com/45819206/119627629-1714a700-be2c-11eb-8ce2-37a82b103721.png)
 
