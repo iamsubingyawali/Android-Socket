@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NetworkActivity"
+    android:background="@drawable/gradient"
+    android:id="@+id/mainLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:id="@+id/chatImage"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/client"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/appDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/chatImage"
+            android:layout_centerHorizontal="true"
+            android:text="Java Chat Client"
+            android:textColor="#ffffff"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ipLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter IP Address"
+            android:layout_below="@+id/appDesc"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/ipAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/ipLabel"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="10dp"
+            android:background="#ffffff"
+            android:digits="0123456789."
+            android:hint="IP Address of Server"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/portLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Port Number"
+            android:layout_below="@+id/ipAddress"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#ffffff"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/portNumber"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/portLabel"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:background="#ffffff"
+            android:padding="10dp"
+            android:inputType="number"
+            android:hint="Port Number of Server"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/connectBtn"
+            android:onClick="connectClicked"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_below="@+id/portNumber"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:text="Connect"
+            android:textAllCaps="false"
+            android:textSize="15dp" />
+
+        <TextView
+            android:onClick="loginAnother"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/connectBtn"
+            android:layout_centerHorizontal="true"
+            android:text="Login With Different Account? Login"
+            android:layout_marginTop="20dp"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            android:textColor="#3DDA83"/>
+    </RelativeLayout>
+
+</LinearLayout>
